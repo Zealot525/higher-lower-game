@@ -49,5 +49,3 @@ while not end:
         print(f"Your final score is {score}.")
         print("You lose!")
         end = True
-
-# having the same 

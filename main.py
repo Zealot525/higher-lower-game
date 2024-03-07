@@ -23,6 +23,9 @@ user_choice = input("Who has more followers on Instagram? Type 'A' or 'B': ")
 
 # comparing user choice to the correct answer
 if user_choice == comparing(choice_A['follower_count'], choice_B['follower_count']):
-    print("You got it!")
+    if user_choice == "B":
+        choice_A = choice_B
+    choice_B = data[random.randint(0, len(data) - 1)]
 else:
+    print(f"Sorry, {choice_A['name']} has {choice_A['follower_count']} million followers, while {choice_B['name']} has {choice_B['follower_count']} million followers.")
     print("You lose!")

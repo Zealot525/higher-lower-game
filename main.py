@@ -36,8 +36,7 @@ while not end:
     # comparing user choice to the correct answer
     if user_choice == comparing(choice_A['follower_count'], choice_B['follower_count']):
         score += 1
-        if user_choice == "B":
-            choice_A = choice_B
+        choice_A = choice_B
         choice_B = data[random.randint(0, len(data) - 1)]
         while choice_A == choice_B:
             choice_B = data[random.randint(0, len(data) - 1)]
